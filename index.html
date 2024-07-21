@@ -5,7 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
 </head>
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Element</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .centered {
+            padding: 20px;
+            background-color: lightblue;
+            border: 2px solid darkblue;
+        }
+    </style>
+</head>
 <body>
+    <div class="centered">
+        This element is centered.<body>
     <form id="contact-form">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
