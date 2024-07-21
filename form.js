@@ -1,21 +1,28 @@
-const form = document.querySelector("#form");
-
-form.addEventListener("submit", (e) => {
+document.getElementById('contact-form').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    var text1 = document.getElementById("text1").value;
-    var text2 = document.getElementById("text2").value;
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
 
-    var my_text = `Result is: %0A - Text1: ${text1} %0A - Text2: ${text2}`;
+    var token = '6927456490:AAFanv0L0LyPB8swrDqJ-v71DHh6eTSeBIA';
+    var chat_id = '7222383115';
+    var text = `New Contact Form Submission:%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
 
-    var token = "6927456490:AAFanv0L0LyPB8swrDqJ-v71DHh6eTSeBIA";
-    var chat_id = -7222383115;
-    var url = `https://api.telegram.org/bot${"6927456490:AAFanv0L0LyPB8swrDqJ-v71DHh6eTSeBIA";
-    }/sendMessage?chat_id=${7222383115}&text=${my_text}`;
+    var url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chat_id}&text=${text}`;
 
-    let api = new XMLHttpRequest();
-    api.open("GET", url, true);
-    api.send();
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
 
-    console.log("Message successfully sended!");
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                alert('Message sent successfully!');
+            } else {
+                alert('Error sending message: ' + xhr.statusText);
+            }
+        }
+    };
+
+    xhr.send();
 });
