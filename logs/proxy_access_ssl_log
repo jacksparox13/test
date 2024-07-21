@@ -1,4 +1,0 @@
-38.154.214.155 - - [21/Jul/2024:02:46:39 +0200] "GET /img/ico/favicon.ico HTTP/1.1" 200 15086 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
-38.154.198.114 - - [21/Jul/2024:02:46:41 +0200] "GET /img/ico/apple-touch-icon.png HTTP/1.1" 200 2615 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
-45.139.64.78 - - [21/Jul/2024:03:43:32 +0200] "GET /img/icon-loader-32@3x.png HTTP/1.1" 200 4567 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
-95.164.157.103 - - [21/Jul/2024:03:43:32 +0200] "GET /img/ico/logo.svg HTTP/1.1" 200 6973 "-" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36"
